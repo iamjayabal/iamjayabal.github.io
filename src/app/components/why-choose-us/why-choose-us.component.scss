@@ -1,10 +1,127 @@
 // welcome section
 .welcome-section {
-  .flex__block {
-    &__list {
-      flex-basis: 50%;
+  .section-title {
+    font-weight: 300;
+    span {
+      font-weight: 500;
+      color: olivedrab;
     }
   }
+}
+
+/* news list */
+.events-header {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  color: #666666;
+}
+.news-list {
+  padding: 0;
+  list-style: none;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      // background: url(../images/separator_stripe.png) repeat-x bottom;
+    }
+    .entry-date {
+      color: #f05a21;
+      text-transform: uppercase;
+      line-height: 24px;
+    }
+    .event-name {
+      font-size: 32px;
+      padding: 10px 0;
+      color: #9fbf04;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    .contact-block {
+      &__list {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+        margin: 5px 0;
+        .icon {
+          width: 18px;
+          height: 18px;
+          font-size: 18px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+/*----------- Entries --------------*/
+
+.entry .entry-meta .entry-date {
+  text-transform: uppercase;
+  color: #f05a21;
+}
+
+.entry .entry-body .entry-title > a {
+  color: #adc84b;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.entry .entry-body .entry-title:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.entry .entry-body .entry-title > a:hover {
+  text-decoration: underline;
+}
+
+#footer .entry .entry-meta .entry-date {
+  color: #b9b9b9;
+}
+
+.entry .contact-info-item {
+  color: #666;
+  margin-top: 0;
+}
+
+.entry .contact-info-item span a {
+  color: #a6c437;
+}
+
+.entry .entry-meta > * {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.entry .entry-meta > *:not(:last-child) {
+  margin-right: 15px;
+}
+
+.welcome-item.single-item .bigHalfCircle {
+  display: none;
+}
+
+.welcome-item.single-item .welcome-content {
+  background: #fafafa;
+}
+
+.entry .entry-meta a {
+  color: #333;
+}
+
+.entry .entry-meta a:hover {
+  text-decoration: underline;
+}
+
+.entry .entry-meta a:before,
+.entry .entry-meta > .entry-tags:before {
+  display: inline-block;
+  margin-right: 8px;
+  color: #b9b9b9;
+  font-family: 'fontello';
 }
 
 // why choose us

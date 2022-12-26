@@ -1,7 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
-@import url(./styles/_basic.scss);
-@import url(./styles/_button.scss);
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+// @import url(./_basic.scss);
+// @import url(./_button.scss);
+@import './basic';
+@import './button';
 
 html,
 body {
@@ -9,7 +10,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
 
 // flex block

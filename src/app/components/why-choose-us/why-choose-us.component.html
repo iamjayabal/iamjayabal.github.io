@@ -1,14 +1,15 @@
 <!-- welcome section  -->
 <section class="page-section welcome-section">
-  <div class="cotainer">
-    <div class="flex__block">
-      <div class="flex__block__list--2">
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-lg-6 col-md-6 col-sm-12">
         <img class="img-fluid rounded" src="assets/img/home/kids.jpg" alt="" />
-      </div>
-      <div class="flex__block__list--2">
+      </div> -->
+      <div class="col-lg-8 col-md-8 col-sm-12">
         <div class="title-holder">
           <h2 class="section-title">
-            Welcome to St.Xavier Public School of Early Learning
+            Welcome to <br />
+            <span>St.Xavier School</span>
           </h2>
         </div>
         <p>
@@ -18,18 +19,51 @@
           omnis nemo.
         </p>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
-          necessitatibus reprehenderit iure, reiciendis totam quisquam!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa amet
-          nobis odit omnis corporis mollitia! Harum, numquam consectetur dicta
-          magni delectus ratione. Fugit voluptatem hic eum, optio voluptatibus
-          omnis nemo.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          eum, dolorem, voluptas deserunt ullam soluta adipisci illum aperiam
+          dicta, eaque dolore quas error animi est! Eum facere incidunt esse
+          nesciunt?
         </p>
         <div class="action">
-          <button mat-raised-button color="primary">More about us</button>
+          <button type="button" class="btn btn-success">More about us</button>
         </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h3 class="events-header">Upcoming Events</h3>
+
+        <ul class="news-list">
+          <li class="news-list__item" *ngFor="let event of eventArray">
+            <mat-card>
+              <mat-card-content>
+                <!-- date  -->
+                <time class="entry-date" datetime="2016-01-27">{{
+                  event.date
+                }}</time>
+                <!-- event name  -->
+                <h3 class="event-name">{{ event.name }}</h3>
+                <div class="contact-block">
+                  <div class="contact-block__list">
+                    <mat-icon
+                      class="icon"
+                      aria-label="schedule icon"
+                      fontIcon="schedule"
+                    ></mat-icon>
+                    <span>{{ event.time }}</span>
+                  </div>
+                  <div class="contact-block__list">
+                    <mat-icon
+                      class="icon"
+                      aria-label="location icon"
+                      fontIcon="location_on"
+                    ></mat-icon>
+                    <span>{{ event.location }}</span>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </li>
+        </ul>
+        <a href="#" class="info-btn">More Events</a>
       </div>
     </div>
   </div>
@@ -58,7 +92,7 @@
                 Labore sit nobis ex veritatis deserunt expedita, tempore tenetur
                 molestiae accusantium cum tempora consequatur laborum.
               </p>
-              <a href="#" class="btn btn-radius btn-outline">Read more</a>
+              <a href="#" class="btnc btnc--radius btnc--outline">Read more</a>
             </div>
           </div>
         </div>
@@ -78,7 +112,7 @@
                 Labore sit nobis ex veritatis deserunt expedita, tempore tenetur
                 molestiae accusantium cum tempora consequatur laborum.
               </p>
-              <a href="#" class="btn btn-radius btn-outline">Read more</a>
+              <a href="#" class="btnc btnc--radius btnc--outline">Read more</a>
             </div>
           </div>
         </div>
@@ -98,7 +132,7 @@
                 Labore sit nobis ex veritatis deserunt expedita, tempore tenetur
                 molestiae accusantium cum tempora consequatur laborum.
               </p>
-              <a href="#" class="btn btn-radius btn-outline">Read more</a>
+              <a href="#" class="btnc btnc--radius btnc--outline">Read more</a>
             </div>
           </div>
         </div>
@@ -118,7 +152,7 @@
                 Labore sit nobis ex veritatis deserunt expedita, tempore tenetur
                 molestiae accusantium cum tempora consequatur laborum.
               </p>
-              <a href="#" class="btn btn-radius btn-outline">Read more</a>
+              <a href="#" class="btnc btnc--radius btnc--outline">Read more</a>
             </div>
           </div>
         </div>
@@ -239,3 +273,12 @@
     </div>
   </div>
 </section>
+
+<!-- what parents says  -->
+<div class="page-section parent-says bg-success">
+  <div class="container">
+    <div class="title-holder text-center">
+      <h2 class="section-title text-white">What Parents Says</h2>
+    </div>
+  </div>
+</div>

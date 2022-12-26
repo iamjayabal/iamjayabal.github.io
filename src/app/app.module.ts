@@ -11,6 +11,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeBannerComponent } from './components/home-banner/home-banner.component';
 import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,11 @@ import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.c
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatButtonModule,
     MatCardModule,
     MatIconModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

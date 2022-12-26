@@ -1,0 +1,14 @@
+.slider {
+  width: 100%;
+  @media (min-width: 780px) {
+    height: 650px;
+  }
+  .carousel-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-width: 780px) {
+      height: 650px;
+    }
+  }
+}
