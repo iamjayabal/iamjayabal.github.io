@@ -13,6 +13,9 @@ import { HomeBannerComponent } from './components/home-banner/home-banner.compon
 import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FormsModule } from '@angular/forms';
+import { PascalcaseDirective } from './directives/pascalcase/pascalcase.directive';
+import { ColorChangeDirective } from './directives/colorchange/color-change.directive';
+import { MousehovereventDirective } from './directives/mousehoverevent/mousehoverevent.directive';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HomeBannerComponent,
     WhyChooseUsComponent,
+    PascalcaseDirective,
+    ColorChangeDirective,
+    MousehovereventDirective,
   ],
   imports: [
     BrowserModule,
