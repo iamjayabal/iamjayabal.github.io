@@ -26,4 +26,8 @@ export class WhyChooseUsComponent {
       location: 'Thondi-Madurai Road, Pillur, Sivagangai-630562',
     },
   ];
+
+  mouseHoverEvent() {
+    console.log('Mouse hover event is working from directive');
+  }
 }
