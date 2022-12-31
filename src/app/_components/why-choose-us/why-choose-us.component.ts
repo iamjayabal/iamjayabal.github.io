@@ -27,6 +27,8 @@ export class WhyChooseUsComponent {
     },
   ];
 
+  public schoolName = 'St.Xavier School';
+
   mouseHoverEvent() {
     console.log('Mouse hover event is working from directive');
   }
